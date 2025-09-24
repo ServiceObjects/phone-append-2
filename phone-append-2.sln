@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "phone-append-2-dot-net", "phone-append-2-dot-net\phone-append-2-dot-net.csproj", "{D7B61D5E-1918-4B42-97DD-1A280195E8E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "phone-append-2-dot-net-examples", "phone-append-2-dot-net-examples\phone-append-2-dot-net-examples.csproj", "{D69549D0-BDBB-4011-83E6-EDF7EC516B03}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "phone-append-2-nodejs", "phone-append-2-nodejs\phone-append-2-nodejs.esproj", "{D5013E75-655B-5519-B272-099D4B80C37D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "phone-append-2-nodejs-examples", "phone-append-2-nodejs-examples\phone-append-2-nodejs-examples.esproj", "{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "phone-append-2-python", "phone-append-2-python\phone-append-2-python.pyproj", "{7D81C002-7380-4185-B677-E0C98F00C009}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "phone-append-2-python-examples", "phone-append-2-python-examples\phone-append-2-python-examples.pyproj", "{062B79E6-4C4C-4188-9939-CCE8D25D7172}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B61D5E-1918-4B42-97DD-1A280195E8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B61D5E-1918-4B42-97DD-1A280195E8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B61D5E-1918-4B42-97DD-1A280195E8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B61D5E-1918-4B42-97DD-1A280195E8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69549D0-BDBB-4011-83E6-EDF7EC516B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69549D0-BDBB-4011-83E6-EDF7EC516B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69549D0-BDBB-4011-83E6-EDF7EC516B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69549D0-BDBB-4011-83E6-EDF7EC516B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5013E75-655B-5519-B272-099D4B80C37D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B74068-E9A0-F585-389B-E0D9FD5C3C1E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7D81C002-7380-4185-B677-E0C98F00C009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D81C002-7380-4185-B677-E0C98F00C009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062B79E6-4C4C-4188-9939-CCE8D25D7172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062B79E6-4C4C-4188-9939-CCE8D25D7172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4E246EE-B5C2-44B6-B983-8D7B62B19814}
+	EndGlobalSection
+EndGlobal
