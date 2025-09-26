@@ -20,18 +20,18 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 # 1. Build the input
 #
 #  Required fields:
-#               LicenseKey
-#               IsLive
+#               license_key
+#               is_live
 # 
 # Optional:
-#        FullName
-#        FirstName
-#        LastName
-#        Address
-#        City
-#        State	
-#        PostalCode
-#        TimeoutSeconds (default: 15)
+#        full_name
+#        first_name
+#        last_name
+#        address
+#        city
+#        state	
+#        postal_code
+#        timeout_seconds (default: 15)
 
 from phone_append_soap import PhoneAppendSoap
 
@@ -43,6 +43,8 @@ city = "Cupertino"
 state = "CA"
 postal_code = "95014-2083"
 timeout_seconds = 15
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 # 2. Call the method.
 service = PhoneAppendSoap(license_key, is_live, timeout_seconds * 1000)
@@ -75,7 +77,7 @@ if response.Error:
 ```
 # PA2 - BusinessPhoneAppend
 
-Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Code, License Key to return a landline phone number.
+Uses the provided BusinessName, Address, City, State, Postal Code, License Key to return a landline phone number.
 
 ### [BusinessPhoneAppend Developer Guide/Documentation](https://www.serviceobjects.com/docs/dots-phone-append-2/pa2-operations/pa2-businessphoneappend/)
 
@@ -85,16 +87,15 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 # 1. Build the input
 #
 #  Required fields:
-#               BusinessName
-#               City
-#               State
-#               LicenseKey
-#               IsLive
+#               license_key
+#               is_live
 # 
 # Optional:
-#        Address
-#        Postal Code
-#        TimeoutSeconds (default: 15)
+#        business_name
+#        address
+#        city
+#        state
+#        postal_code
 
 from business_phone_append_soap import BusinessPhoneAppendSoap
 
@@ -103,6 +104,8 @@ address = "27 E Cota ST"
 city = "Santa Barbara"
 state = "CA"
 postal_code = "93101"
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 # 2. Call the method.
 service = BusinessPhoneAppendSoap(license_key, is_live, timeout_seconds * 1000)
@@ -134,7 +137,7 @@ if response.Error:
 ```
 # PA2 - CompositePhoneAppend
 
-Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Code, License Key to return a landline phone number.
+Uses the provided Name, Address, City, State, Postal Code, IsBusiness, LicenseKey to return a landline phone number.
 
 ### [CompositePhoneAppend Developer Guide/Documentation](https://www.serviceobjects.com/docs/dots-phone-append-2/pa2-operations/pa2-compositephoneappend/)
 
@@ -144,16 +147,17 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 # 1. Build the input
 #
 #  Required fields:
-#               LicenseKey
-#               IsLive
+#               license_key
+#               is_live
 # 
 # Optional:
-#        Name
-#        Address
-#        City
-#        State
-#        Postal Code
-#        TimeoutSeconds (default: 15)
+#        name
+#        address
+#        city
+#        state
+#        postal_code Code
+#        is_business
+#        timeout_seconds (default: 15)
 
 from composite_phone_append_soap import CompositePhoneAppendSoap
 
@@ -163,6 +167,8 @@ city = "Santa Barbara"
 state = "CA"
 postal_code = "93101"
 is_business = "False"
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 # 2. Call the method.
 service = CompositePhoneAppendSoap(license_key, is_live, timeout_seconds * 1000)

@@ -17,15 +17,15 @@ export class PA2Response {
  */
 export class PhoneInfo {
     constructor(data = {}) {
-        this.Phone = data.Phone || null;
-        this.Name = data.Name || null;
-        this.Address = data.Address || null;
-        this.City = data.City || null;
-        this.State = data.State || null;
-        this.PostalCode = data.PostalCode || null;
-        this.IsResidential = data.IsResidential || null;
-        this.Certainty = data.Certainty || null;
-        this.LineType = data.LineType || null;
+        this.Phone = data.Phone;
+        this.Name = data.Name;
+        this.Address = data.Address;
+        this.City = data.City;
+        this.State = data.State;
+        this.PostalCode = data.PostalCode;
+        this.IsResidential = data.IsResidential;
+        this.Certainty = data.Certainty;
+        this.LineType = data.LineType;
     }
 
     toString() {
@@ -38,10 +38,10 @@ export class PhoneInfo {
  */
 export class Error {
     constructor(data = {}) {
-        this.Type = data.Type || null;
-        this.TypeCode = data.TypeCode || null;
-        this.Desc = data.Desc || null;
-        this.DescCode = data.DescCode || null;
+        this.Type = data.Type;
+        this.TypeCode = data.TypeCode;
+        this.Desc = data.Desc;
+        this.DescCode = data.DescCode;
     }
 
     toString() {

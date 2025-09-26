@@ -20,18 +20,17 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 // 1. Build the input
 //
 //  Required fields:
-//               LicenseKey
-//               IsLive
+//               license_key
+//               is_live
 // 
 // Optional:
-//        FullName
-//        FirstName
-//        LastName
-//        Address
-//        City
-//        State	
-//        PostalCode
-//        TimeoutSeconds (default: 15)
+//        full_name
+//        first_name
+//        last_name
+//        address
+//        city
+//        state	
+//        postal_code
 
 from phone_append_rest import get_phone_append
 
@@ -42,6 +41,8 @@ address = "1 Infinite Loop"
 city = "Cupertino"
 state = "CA"
 postal_code = "95014-2083"
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 // 2. Call the sync Invoke() method.
  response = get_phone_append(full_name, first_name, last_name, address, city, state, postal_code, license_key, is_live)
@@ -83,16 +84,15 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 // 1. Build the input
 //
 //  Required fields:
-//               BusinessName
-//               City
-//               State
-//               LicenseKey
-//               IsLive
+//               license_key
+//               is_live
 // 
 // Optional:
-//        Address
-//        Postal Code
-//        TimeoutSeconds (default: 15)
+//        business_name
+//        address
+//        city
+//        state
+//        postal_code
 
 from business_phone_append_rest import get_business_phone_append
 
@@ -101,6 +101,8 @@ address = "27 E Cota ST"
 city = "Santa Barbara"
 state = "CA"
 postal_code = "93101"
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 
 // 2. Call the sync Invoke() method.
@@ -142,17 +144,16 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 // 1. Build the input
 //
 //  Required fields:
-//               LicenseKey
-//               IsLive
+//               license_key
+//               is_live
 // 
 // Optional:
-//        Name
-//        Address
-//        City
-//        State
-//        Postal Code
-//        IsBusiness
-//        TimeoutSeconds (default: 15)
+//        name
+//        address
+//        city
+//        state
+//        postal_code
+//        is_business
 
 from composite_phone_append_rest import get_composite_phone_append
 
@@ -162,9 +163,11 @@ city = "Santa Barbara"
 state = "CA"
 postal_code = "93101"
 is_business = "False"
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 // 2. Call the sync Invoke() method.
- response = get_composite_phone_append(name, address, city, state, postal_code, is_business, license_key, is_live)
+response = get_composite_phone_append(name, address, city, state, postal_code, is_business, license_key, is_live)
 
 // 3. Inspect results.
 print("\r\n* Phone Info *\r\n")

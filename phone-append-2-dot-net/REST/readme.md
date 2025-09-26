@@ -93,13 +93,13 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 // 1. Build the input
 //
 //  Required fields:
-//               BusinessName
-//               City
-//               State
 //               LicenseKey
 //               IsLive
 // 
 // Optional:
+//        BusinessName
+//        City
+//        State
 //        Address
 //        Postal Code
 //        TimeoutSeconds (default: 15)
@@ -113,7 +113,7 @@ BusinessPhoneAppendClient.BusinessPhoneAppendInput businessPhoneAppendInput = ne
     State: "CA",
     PostalCode: "93101",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 
@@ -171,7 +171,7 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 //        Address
 //        City
 //        State
-//        Postal Code
+//        PostalCode
 //        IsBusiness
 //        TimeoutSeconds (default: 15)
 
@@ -185,7 +185,7 @@ CompositePhoneAppendClient.CompositePhoneAppendInput compositePhoneAppendInput =
     PostalCode: "93101",
     IsBusiness: "True",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 

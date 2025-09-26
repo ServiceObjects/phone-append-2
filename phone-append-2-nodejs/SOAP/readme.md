@@ -20,18 +20,18 @@ Uses the provided FullName, FirstName, LastName, Address, City, State, Postal Co
 // 1. Build the input
 //
 //  Required fields:
-//               LicenseKey
-//               IsLive
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        FullName
-//        FirstName
-//        LastName
-//        Address
-//        City
-//        State	
-//        PostalCode
-//        TimeoutSeconds (default: 15)
+//        fullName
+//        firstName
+//        lastName
+//        address
+//        city
+//        state	
+//        postalCode
+//        timeoutSeconds (default: 15)
 
 import { PhoneAppendSoap } from '../phone-append-2-nodejs/SOAP/phone_append_soap.js';
 
@@ -43,6 +43,8 @@ const city = "Cupertino";
 const state = "CA";
 const postalCode = "95014-2083";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY";
 
 // 2. Call the sync Invoke() method.
 const pa2 = new PhoneAppendSoap(

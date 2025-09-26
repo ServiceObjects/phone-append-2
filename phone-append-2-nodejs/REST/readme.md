@@ -42,6 +42,8 @@ const address = "1 Infinite Loop";
 const city = "Cupertino";
 const state = "CA";
 const postalCode = "95014-2083";
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY";
 
 // 2. Call the sync Invoke() method.
 const response = await PhoneAppendClient.invokeAsync(

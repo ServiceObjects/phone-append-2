@@ -44,8 +44,9 @@ string Address = "1 Infinite Loop";
 string City = "Cupertino";
 string State = "CA";
 string PostalCode = "95014-2083";
+string LicenseKey = "YOUR LICENSE KEY";
 
-PhoneInfoResponse response = pv2.PhoneAppendAsync(FullName, FirstName, LastName, Address, City, State, PostalCode, licenseKey).Result;
+PhoneInfoResponse response = pv2.PhoneAppendAsync(FullName, FirstName, LastName, Address, City, State, PostalCode, LicenseKey).Result;
 
 // 4. Inspect results.
 if (response.Error is null)
